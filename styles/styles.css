@@ -1,0 +1,111 @@
+/* JumboTron Styles
+-------------------------------------------------- */
+
+.jumbotron {
+    background-image: url("../img/jumbotron_bg.jpg");
+    background-size: cover;
+    background-color: #ed647d;
+    color: white;
+}
+
+/* Input Form Styles
+-------------------------------------------------- */
+
+input[type="text"]:focus {
+    border-color: rgba(237, 100, 125, .8);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(237, 100, 125, .4);
+    outline: 0 none;
+    color: #ed647d;
+}
+
+/* Example Paragraphs Styles
+-------------------------------------------------- */
+
+/* Sidebar Styles
+-------------------------------------------------- */
+
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-left {
+    left: 0;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -100%; /* 12 columns */
+  }
+
+  .row-offcanvas-right.active
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -100%; /* 12 columns */
+  }
+
+  .row-offcanvas-left.active
+  .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+  }
+}
+
+/* Footer Styles
+-------------------------------------------------- */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    /* Margin bottom by footer height */
+}
+
+.sticky-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    /* Set the fixed height of the footer here */
+    line-height: 60px;
+    /* Vertically center the text there */
+    background-color: #ed647d;
+    color: #ffffff;
+    padding: 12px;
+}
+
+.sticky-footer a {
+    color: #ffffff;
+}
