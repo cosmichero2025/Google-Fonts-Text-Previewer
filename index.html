@@ -19,94 +19,61 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-3"></div>
             <div class="col-sm-6">
-                <form>
-                    <div class="form-group">
-                        <label for="fontNameInput">Font Name</label>
-                        <input type="text" class="form-control" id="fontNameInput" aria-describedby="fontName" placeholder="Comic Sans....">
+                <div class="form-group row">
+                    <div class="col-8">
+                        <input class="form-control" type="search" placeholder="" id="searchFontsField">
                     </div>
-                </form>
+                    <button type="submit" class="btn btn-primary" id="searchFontsButton">Punch It!</button>
+                </div>
+                <div class="col-sm-6"></div>
             </div>
-            <div class="col-sm-3"></div>
-        </div>
 
-        <div class="row row-offcanvas row-offcanvas-right">
-
-            <div class="col-12 col-md-9">
-                <p class="float-right">
-                    <button type="button" class="btn btn-primary btn-sm" data-toggle="offcanvas">Toggle nav</button>
-                </p>
-                <div class="row">
-                    <div class="col-12 col-lg-12 font-example">
-                        <h2>Default Page Font</h2>
-                        <p>Last Updated: <a href="#">Mark</a></p>
-                        <p>This font has <span id="variantNumber">0</span> variants.</p>
-                        <ul>
-                            <li>Regular</li>
-                            <li>Italic</li>
-                            <li>700</li>
-                        </ul>
-                        <hr>
-                        <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
-                        <blockquote>
-                            <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id.</p>
-                        </blockquote>
-                        <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-                        <h2>Heading</h2>
-                        <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-                        <h3>Sub-heading</h3>
-                        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                        <pre><code>Example code block</code></pre>
-                        <p>Aenean lacinia bibendum nulla sed consectetur.</p>
+            <div class="row row-offcanvas row-offcanvas-right">
+                <div class="col-12 col-md-8">
+                    <p class="float-right d-block d-md-none">
+                        <button type="button" class="btn btn-primary btn-sm" data-toggle="offcanvas">Toggle Fonts</button>
+                    </p>
+                    <div class="row">
+                        <div class="col-12 col-lg-12" id="fontExample">
+                            <h2 id="fontName">Default Page Font</h2>
+                            <p>Last Updated: <a href="#">Mark</a></p>
+                            <hr>
+                            <p>This fonts links <a href="#">looks like this </a>, these links can go to lots of places like Youtube, Facebook, Instagram or really anywhere you can think of on the internet.</p>
+                            <blockquote>
+                                <p>A testamonial can be a powerful think they can say things like <strong>- "Wow these guys were pretty good but not to good..."</strong> the cool thing is you can pick which ones you want to use.</p>
+                            </blockquote>
+                            <p>A dude walked down the road and saw <em>Seven Deadly Cats</em>. After seeing them he was like "nah" and went the other way.</p>
+                            <h2>Important Lesson</h2>
+                            <p>It's important to not get lost in the moment and move to fast in your life. In short just take a breath.</p>
+                            <h4>Less Important Lesson</h4>
+                            <p>The metal lightpost in london dont taste good.</p>
+                            <pre><code>
+if (confusionLevel &lt; 3) {
+    alert('Take a break');
+}</code></pre>
+                            <small>Or something like that...</small>
+                        </div>
                     </div>
                 </div>
-                <!--/row-->
-            </div>
-            <!--/span-->
-
-            <div class="col-6 col-md-3 sidebar-offcanvas" id="sidebar">
-                <div class="list-group">
-                    <a class="list-group-item">
-                        <h4 class="text-center">Other Fonts!</h4>
-                    </a>
-                    <a href="#" class="list-group-item">
-                        <div class="d-flex w-100 justify-content-between">
-                            <p>Font Name</p>
-                            <small>3 days ago</small>
-                        </div>
-                    </a>
-                    <a href="#" class="list-group-item">
-                        <div class="d-flex w-100 justify-content-between">
-                            <p>Font Name</p>
-                            <small>3 days ago</small>
-                        </div>
-                    </a>
-                    <a href="#" class="list-group-item">
-                        <div class="d-flex w-100 justify-content-between">
-                            <p>Font Name</p>
-                            <small>3 days ago</small>
-                        </div>
-                    </a>
+                <!-- Body -->
+                <div class="col-6 col-md-4 sidebar-offcanvas" id="sidebar">
+                    <div class="list-group" id="outputTrendingBox">
+                        <h4 class="list-group-item">Trending Fonts!</h4>
+                    </div>
                 </div>
+                <!-- Sidebar -->
             </div>
-            <!--/span-->
+            <!-- Content -->
         </div>
-        <!--/row-->
+        <!-- Container -->
     </div>
-    <!--/.container-->
-
     <footer class="sticky-footer">
         <div class="container">
             <h4 class="text-center">Made by <a href="https://github.com/cosmichero2025">Brandon Kaufhold</a></h4>
         </div>
     </footer>
-
-
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-  
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
     <script src="scripts/app.js"></script>
 </body>
