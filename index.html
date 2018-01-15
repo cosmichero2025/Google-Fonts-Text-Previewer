@@ -6,6 +6,7 @@
     <title>Font Previewer</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
@@ -24,7 +25,9 @@
                     <div class="col-8">
                         <input class="form-control" type="search" placeholder="" id="searchFontsField">
                     </div>
-                    <button type="submit" class="btn btn-primary" id="searchFontsButton">Punch It!</button>
+                    <div class="col-4">
+                        <button type="submit" class="btn btn-primary" id="searchFontsButton">Punch It!</button>
+                    </div>
                 </div>
                 <div class="col-sm-6"></div>
             </div>
@@ -35,9 +38,9 @@
                         <button type="button" class="btn btn-primary btn-sm" data-toggle="offcanvas">Toggle Fonts</button>
                     </p>
                     <div class="row">
-                        <div class="col-12 col-lg-12" id="fontExample">
+                        <div class="col-12 col-lg-12" id="fontOutput">
                             <h2 id="fontName">Default Page Font</h2>
-                            <p>Last Updated: <a href="#">Mark</a></p>
+                            <p>Font Page: <a id="fontProfile" href="#">https://fonts.google.com/</a></p>
                             <hr>
                             <p>This fonts links <a href="#">looks like this </a>, these links can go to lots of places like Youtube, Facebook, Instagram or really anywhere you can think of on the internet.</p>
                             <blockquote>
@@ -59,7 +62,7 @@ if (confusionLevel &lt; 3) {
                 <!-- Body -->
                 <div class="col-6 col-md-4 sidebar-offcanvas" id="sidebar">
                     <div class="list-group" id="outputTrendingBox">
-                        <h4 class="list-group-item">Trending Fonts!</h4>
+                        <h4 class="list-group-item text-center">Trending Fonts!</h4>
                     </div>
                 </div>
                 <!-- Sidebar -->
