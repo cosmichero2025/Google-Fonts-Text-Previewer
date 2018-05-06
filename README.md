@@ -2,13 +2,9 @@
 
 A simple little web app I built because I wasn't that confident in my AJAX/JSON skills so I used this to learn some more. All it really does is take user input from a web font then changes the basic template to that web font's font family. It also displays the top 6 "trending" fonts on the google fonts platform.
 
-## Getting Started
+## Live Demo
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Installing
-
-Just ya'know download it and run it in really any web server enviroment. I was using apache but have recently discovered node.js and thats pretty cool.
+https://cosmichero2025.github.io/Google-Fonts-Text-Previewer/
 
 ## Built With
 
